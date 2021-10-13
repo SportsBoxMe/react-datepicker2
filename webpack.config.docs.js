@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: "production",
   entry: './docs/src/boot.js',
   output: {
     path: path.resolve(__dirname, 'docs'),
@@ -41,7 +42,7 @@ module.exports = {
       {
         use: 'file-loader',
         test: /\.(woff(2)?|ttf)(\?v=\d+\.\d+\.\d+)?$/,
-      }, 
+      },
       {
         test: /\.scss$/,
         use: [
