@@ -2644,7 +2644,8 @@
             isGregorian = _this$state.isGregorian;
         var className = classnames__default["default"](_this.props.className, _defineProperty({}, outsideClickIgnoreClass, isOpen));
         return /*#__PURE__*/React__default["default"].createElement("div", {
-          ref: ref
+          ref: ref,
+          className: _this.props.rootClassName
         }, /*#__PURE__*/React__default["default"].createElement("input", {
           placeholder: _this.props.placeholder,
           name: _this.props.name,
@@ -2989,6 +2990,7 @@
     toggleButtonText: PropTypes__default["default"].any,
     showTodayButton: PropTypes__default["default"].bool,
     placeholder: PropTypes__default["default"].string,
+    rootClassName: PropTypes__default["default"].object,
     name: PropTypes__default["default"].string,
     persianDigits: PropTypes__default["default"].bool,
     setTodayOnBlur: PropTypes__default["default"].bool,

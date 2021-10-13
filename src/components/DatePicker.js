@@ -38,6 +38,7 @@ export default class DatePicker extends Component {
     toggleButtonText: PropTypes.any,
     showTodayButton: PropTypes.bool,
     placeholder: PropTypes.string,
+    rootClassName: PropTypes.object,
     name: PropTypes.string,
     persianDigits: PropTypes.bool,
     setTodayOnBlur: PropTypes.bool,
@@ -278,7 +279,7 @@ export default class DatePicker extends Component {
     });
 
     return (
-      <div ref={ref}>
+      <div ref={ref} className={this.props.rootClassName}>
         <input
           placeholder={this.props.placeholder}
           name={this.props.name}
